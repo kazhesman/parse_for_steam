@@ -1,0 +1,110 @@
+header {
+    background: linear-gradient(rgb(189, 138, 35), rgb(108, 96, 10));
+    height: 20vh; /* На всю высоту экрана */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали размеры */
+}
+div {
+    display: inline-block;
+   }
+.icons {
+    display: inline;
+    color: whitesmoke;
+    transition: transform 0.2s ease-in-out;
+    transform: scaleX(-1);
+}
+
+#results {
+    overflow-y: auto;
+    width: 100%;
+    /* position: absolute; */
+    /* height: 400px; */
+    /* display: none; */
+    scrollbar-width: 10px;
+    /* margin-left: 400px ; */
+    background-color: rgb(57, 57, 57);
+    
+}
+
+  #toggle:checked + #arrow {
+    transform: scaleX(-1) rotate(-90deg);
+  }
+  #togglesettings:checked + #settings {
+    transform: scaleX(-1) rotate(-90deg);
+  }
+  #toggleadd:checked + #add {
+    transform: scaleX(-1) rotate(-90deg);
+  }
+
+.message {
+    background-color: whitesmoke;
+    border-width: 13px;
+    border-color: black;
+    display: block;
+    margin: 10px;
+    --deleting-translate-x: -50%;
+    --select-message-scale: 0.9; 
+    border-top-left-radius: 0.9375rem;
+    border-top-right-radius: 0.9375rem;
+    border-bottom-left-radius: 0.9375rem;
+    border-bottom-right-radius: 0.9375rem;
+    padding: 20px 15px;
+    
+}
+.new {
+  opacity: 0;
+  transform: scale(0.5); /* Новый блок сначала маленький */
+  margin: -10px 0; /* Сначала отступы сжаты, чтобы не сдвигались */
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1) ;
+  margin: 10px 0 ; /* Возвращаем нормальный отступ */
+}
+
+
+
+.new1 {
+  height: 100px;
+}
+.new2 {
+  height: 200px;
+}
+.new3 {
+  height: 300px;
+}
+.new4 {
+  height: 400px;
+}
+
+
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  /* width: 80%; это кал */ 
+}
+#root {
+  width: 800px;
+}
+
+.search {
+    border: 1px solid teal;
+    margin: 5px 0;
+    padding: 5px 15px;
+    width: 100%
+}
+
+
+
+#skins {
+ 
+  border: 1px solid teal;
+  display: block;
+}
