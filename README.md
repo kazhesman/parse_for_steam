@@ -1,5 +1,5 @@
 # parse_for_steam
-parcing profitable items on steam!!!!11!
+parcing profitable items on steam!!!!11! (beta)
 
 
 you give the script a link of type like:
@@ -12,3 +12,4 @@ https://steamcommunity.com/market/search?q=&category_570_Hero%5B%5D=any&category
 work on:
 get users parameters like % or price
 pagination
+db, node js backend, ui ux
